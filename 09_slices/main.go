@@ -34,4 +34,7 @@ func main() {
 	fmt.Println("HighScores -> ",highScores)
 	sort.Ints(highScores)
 	fmt.Println("highScores -> ",highScores)
+	index := 2
+	highScores = append(highScores[:index],highScores[index+1:]...)
+	fmt.Println("highScores -> ",highScores)
 }
