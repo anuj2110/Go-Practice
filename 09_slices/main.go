@@ -35,6 +35,6 @@ func main() {
 	sort.Ints(highScores)
 	fmt.Println("highScores -> ",highScores)
 	index := 2
-	highScores = append(highScores[:index],highScores[index+1:]...)
+	highScores = append(highScores[:index],highScores[index+1:]...) // * -> This is spread like operator
 	fmt.Println("highScores -> ",highScores)
 }
